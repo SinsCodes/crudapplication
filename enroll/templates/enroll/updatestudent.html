@@ -1,0 +1,18 @@
+{% extends 'enroll/base.html' %}
+{% block content %}
+
+<div class="row">
+    <div class="col-sm-8 offset-2">
+        <h4 class="text-center" style="background-color: rgb(255, 127, 138);">UpdateStudents</h4>
+        <form action="" method="POST">
+        {% csrf_token %}
+        {{form.as_p}}
+
+        <input type="submit" value="update" class="btn btn-success">
+        </form>
+
+
+    </div>
+
+</div>
+{% endblock content %}
